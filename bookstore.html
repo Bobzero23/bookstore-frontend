@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookstore.css">
+    <title>Bookstore</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="bookstore.html">Book Page</a></li>
+            <li><a href="book-list.html">Book List</a></li>
+            <li><a href="cart.html">My Cart 🛒</a></li>
+            <li><a id="logoutLink">Log Out</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <form id="myForm">
+            <div class="row1">
+                <input type="text" placeholder="book name" name="name">
+                <input type="text" placeholder="book author" name="author">
+            </div>
+            <div class="row2">
+                <input type="text" placeholder="book publisher" name="publisher">
+                <input type="text" placeholder="book reviews" name="reviews">
+            </div>
+            <div class="row3">
+                <input type="text" placeholder="book publication year" name="publication">
+                <input type="text" placeholder="book price" name="price">
+            </div>
+            <div class="row4">
+                <input type="text" placeholder="book description" class="description" name="description">
+            </div>
+            <div class="row5">
+                <button type="submit" class="button">submit</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="loginChecker.js"></script>
+    <script src="bookstore.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

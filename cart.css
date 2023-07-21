@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    font-weight: 700;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #606c38;
+    background-image: url(media/image8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 80px;
+    margin-left: 10px
+}
+
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cartItems {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.books {
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.clear-btn {
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, .7);
+    border-color: rgba(255, 255, 255, .6);
+    text-transform: uppercase;
+    color: rgb(2, 46, 24);
+}
