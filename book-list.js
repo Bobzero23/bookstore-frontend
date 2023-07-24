@@ -44,6 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Store the updated cartItems array in local storage
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
-        alert(`book with id: ${bookId}, added to cart`);
+        // alert(`book with id: ${bookId}, added to cart`);
     }
 });

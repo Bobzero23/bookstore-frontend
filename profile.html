@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Review</a></li>
+            <li><a href="bookstore.html">Book Page</a></li>
+            <li><a href="book-list.html">Book List</a></li>
+            <li><a href="cart.html">My Cart 🛒</a></li>
+            <li><a href="profile.html" class="profile-icon">🤵</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="user-container">
+            <div class="user" id="user">
+                <img class="user-icon" src="/bookstore/media/user.png">
+            </div>
+            <div class="user-info" id="user-info">
+                <div class="user-name">User name: <span id="span-name">Bobzero</span></div>
+                <div class="user-phone">Phone: <span id="span-phone">56464564</span></div>
+                <div class="user-password">Password: <span>********</span></div>
+            </div>
+            <div class="user-btn-container" id="user-btn-container">
+                <button class="edit-btn" id="edit-btn">Edit info</button>
+                <button class="logout-btn" id="logoutLink">Logout</button>
+                <button class="delete-btn" id="delete-btn">Delete account</button>
+            </div>
+            <div class="edit-container" id="edit-container">
+                <h1>Edit Your Information</h1>
+                <input type="text" class="edit-username" id="edit-username" placeholder="username">
+                <input type="text" class="edit-phone" id="edit-phone" placeholder="phone number">
+                <input type="text" class="edit-address" id="edit-address" placeholder="address">
+                <input type="password" class="edit-password" id="edit-password" placeholder="password">
+                <button class="submit-btn" id="submit-btn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Move axios to the top -->
+    <script src="loginChecker.js"></script>
+    <script src="profile.js"></script>
+</body>
+
+</html>

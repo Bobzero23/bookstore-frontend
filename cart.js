@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Delay the execution of the fetchCartItems() function by 1 second
     setTimeout(function () {
+
+        clearbtnEl.addEventListener("click", () => {
+            localStorage.removeItem("cartItems");
+            location.reload();
+        })
+
+
         // Check if the cartItemsDiv element is present
         if (cartItemsDiv) {
             // Fetch cart items from the backend
@@ -32,12 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     cartItemsDiv.textContent = "Failed to fetch cart items.";
                 });
         }
-
-
-        clearbtnEl.addEventListener("click", () => {
-            localStorage.removeItem("cartItems");
-            location.reload();
-        })
 
 
     }, 1000); // 1000 milliseconds = 1 second
