@@ -107,7 +107,7 @@ button {
 .edit-container {
     font-family: monospace;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     display: none;
@@ -122,9 +122,28 @@ button {
 
 .edit-container h1 {
     margin: 20px;
+    position: relative;
 }
 
 .edit-container button {
+    display: inline;
     margin-left: 160px;
     padding: 10px;
+}
+
+.edit-container .edit-password {
+    margin-bottom: 70px;
+}
+
+.edit-container .back-btn {
+    margin: 0px;
+    position: absolute;
+    left: 450px;
+    bottom: 100px;
+}
+
+.edit-container .submit-btn {
+    position: absolute;
+    left: 550px;
+    bottom: 100px;
 }

@@ -58,9 +58,37 @@ formEl.addEventListener("submit", function (event) {
             localStorage.setItem('userPhone', userPhone);
             localStorage.setItem('userId', userId);
         })
-
 });
 
+
+const backBtnEl = document.getElementById("back-btn");
+
+backBtnEl.addEventListener("click", () => {
+    userInfoEl.style.display = "inline-flex";
+    userInfoEl.style.display = "flex";
+    userInfoEl.style.justifyContent = "center";
+    userBtnContainerEl.style.display = "inline-flex";
+    userBtnContainerEl.style.display = "flex";
+    userBtnContainerEl.style.justifyContent = "center";
+    userEl.style.display = 'inline-flex';
+    userEl.style.margin = "20px";
+    userEl.style.display = "flex";
+    userEl.style.justifyContent = "center";
+    editConatainerEl.style.display = 'block';
+    formEl.style.display = "none"
+})
+
+const logoutButton = document.getElementById("logoutLink");
+
+
+logoutButton.addEventListener('click', logout);
+
+function logout() {
+    //localStorage.clear();
+    localStorage.setItem("isLogin", "false");
+    localStorage.removeItem("cartItems");
+    window.location.replace("/Bookstore/");
+}
 
 
 

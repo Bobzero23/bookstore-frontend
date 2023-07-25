@@ -1,3 +1,21 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+    const isLogin = localStorage.getItem('isLogin');
+
+    if (!isLogin) {
+        window.location.replace('index.html');
+    }
+});
+
+// Popstate event listener to handle user going back from the logged-out state
+window.addEventListener('popstate', function () {
+    const isLogin = localStorage.getItem('isLogin');
+
+    if (!isLogin) {
+        window.location.replace('index.html');
+    }
+});
+
 const loginForm = document.getElementById('my-form');
 loginForm.addEventListener('submit', (event) => {
     event.preventDefault();

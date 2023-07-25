@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="profile.css">
+    <script src="loginChecker.js"></script>
     <title>Profile</title>
 </head>
 
@@ -28,8 +29,8 @@
                 <img class="user-icon" src="/bookstore/media/user.png">
             </div>
             <div class="user-info" id="user-info">
-                <div class="user-name">User name: <span id="span-name">Bobzero</span></div>
-                <div class="user-phone">Phone: <span id="span-phone">56464564</span></div>
+                <div class="user-name">User name: <span id="span-name">updating..</span></div>
+                <div class="user-phone">Phone: <span id="span-phone">updating..</span></div>
                 <div class="user-password">Password: <span>********</span></div>
             </div>
             <div class="user-btn-container" id="user-btn-container">
@@ -45,13 +46,14 @@
                 <input type="text" class="edit-address" id="edit-address" placeholder="address" name="address" required>
                 <input type="password" class="edit-password" id="edit-password" placeholder="password" name="password"
                     required>
+
+                <button class="back-btn" id="back-btn">Go back</button>
                 <button class="submit-btn" type="submit" id="submit-btn">Submit</button>
             </form>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Move axios to the top -->
-    <script src="loginChecker.js"></script>
     <script src="profile.js"></script>
 </body>
 
