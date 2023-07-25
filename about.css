@@ -52,19 +52,25 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .about {
-    width: 300px;
+    width: 350px;
     height: 300px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 30px;
+    flex-direction: column;
+    padding: 10px;
     background-color: #1b4332;
 }
 
 p {
+    color: white;
+}
+
+.about h3 {
+    margin: 10px;
     color: white;
 }

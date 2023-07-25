@@ -22,29 +22,28 @@
     </nav>
     <div class="upper-container">
         <div class="container">
-            <h1>Connect with us</h1>
             <div class="contact-box">
                 <div class="contact-left">
                     <h3>Send Your Request</h3>
-                    <form>
+                    <form id="my-form">
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Name</label>
-                                <input type="text">
+                                <input type="text" name="name" required>
                             </div>
                             <div class="input-group">
                                 <label>Phone</label>
-                                <input type="text">
+                                <input type="text" name="phone" required>
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Email</label>
-                                <input type="email">
+                                <input type="email" name="email" required>
                             </div>
                             <div class="input-group">
                                 <label>Book-name</label>
-                                <input type="text">
+                                <input type="text" name="bookName" required>
                             </div>
                         </div>
 
@@ -55,30 +54,22 @@
                     </form>
                 </div>
                 <div class="contact-right">
-                    <h3>Reach Us</h3>
-                    <table>
-                        <tr>
-                            <td>Email</td>
-                            <td>Bobzero@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone</td>
-                            <td>+1 584 592 2832</td>
-                        </tr>
-                        <tr>
-                            <td>Adrres</td>
-                            <td>456 Somewhere, Around there st. <br>
-                                In ther middle of Nowhere Somewhere<br>
-                                Around there is there or where
-                            </td>
-                        </tr>
-                    </table>
+                    <h3>Bookstores are such amazing places</h3>
+                    <p>Nestled within the heart of the bustling city, the bookstore stands as a beacon of intellectual
+                        curiosity and literary enchantment. As one steps through its weathered wooden doors, an
+                        immediate sense of tranquility envelops them, like stepping into a haven away from the hustle
+                        and bustle of daily life. The delightful aroma of books, both new and old, lingers in the air,
+                        creating a heady symphony of knowledge and nostalgia. <br> <br>
+
+                        The sight that greets visitors is a mesmerizing display of shelves upon shelves, adorned with
+                        books of every shape, size, and color, each one promising a unique journey into the realms of
+                        imagination.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>

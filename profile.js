@@ -27,3 +27,40 @@ editBtnEl.addEventListener("click", () => {
     userEl.style.display = 'none';
     editConatainerEl.style.display = 'block';
 })
+
+
+const formEl = document.getElementById("edit-container");
+formEl.addEventListener("submit", function (event) {
+    event.preventDefault();
+    alert("it is working")
+
+    const formData = new FormData(this);
+
+
+    axios.put(`http://localhost:8081/editUser/${userId}`, Object.fromEntries(formData))
+        .then((response) => {
+
+            const user = response.data;
+
+            console.log(response.data);
+
+            window.location.href = "profile.html";
+            alert("user updated successfully!!");
+
+
+            const userId = user.user_id;
+            const userPhone = user.phone;
+            const username = user.username;
+            const password = user.password;
+
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', password);
+            localStorage.setItem('userPhone', userPhone);
+            localStorage.setItem('userId', userId);
+        })
+
+});
+
+
+
+

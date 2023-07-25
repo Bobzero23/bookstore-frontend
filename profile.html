@@ -37,14 +37,16 @@
                 <button class="logout-btn" id="logoutLink">Logout</button>
                 <button class="delete-btn" id="delete-btn">Delete account</button>
             </div>
-            <div class="edit-container" id="edit-container">
+            <form class="edit-container" id="edit-container">
                 <h1>Edit Your Information</h1>
-                <input type="text" class="edit-username" id="edit-username" placeholder="username">
-                <input type="text" class="edit-phone" id="edit-phone" placeholder="phone number">
-                <input type="text" class="edit-address" id="edit-address" placeholder="address">
-                <input type="password" class="edit-password" id="edit-password" placeholder="password">
-                <button class="submit-btn" id="submit-btn">Submit</button>
-            </div>
+                <input type="text" class="edit-username" id="edit-username" placeholder="username" name="username"
+                    required>
+                <input type="text" class="edit-phone" id="edit-phone" placeholder="phone number" name="phone" required>
+                <input type="text" class="edit-address" id="edit-address" placeholder="address" name="address" required>
+                <input type="password" class="edit-password" id="edit-password" placeholder="password" name="password"
+                    required>
+                <button class="submit-btn" type="submit" id="submit-btn">Submit</button>
+            </form>
         </div>
     </div>
 
