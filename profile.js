@@ -32,7 +32,6 @@ editBtnEl.addEventListener("click", () => {
 const formEl = document.getElementById("edit-container");
 formEl.addEventListener("submit", function (event) {
     event.preventDefault();
-    alert("it is working")
 
     const formData = new FormData(this);
 
